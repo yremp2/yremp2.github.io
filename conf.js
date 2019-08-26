@@ -13,7 +13,7 @@ jsproxy_config({
   // 节点配置
   node_map: {
     'demo-hk': {
-      label: '演示服务-香港节点',
+      label: '香港节点',
       lines: {
         // 主机:权重
         'node-aliyun-hk-1.etherdream.com:8443': 1,
@@ -21,7 +21,7 @@ jsproxy_config({
       }
     },
     'demo-sg': {
-      label: '演示服务-新加坡节点',
+      label: '新加坡节点',
       lines: {
         'node-aliyun-sg.etherdream.com:8443': 1,
       },
@@ -53,7 +53,7 @@ jsproxy_config({
   /**
    * 默认节点
    */
-  node_default: 'mysite',
+  node_default: 'demo-hk',
   // node_default: /jsproxy-demo\.\w+$/.test(location.host) ? 'demo-hk' : 'mysite',
 
   /**
