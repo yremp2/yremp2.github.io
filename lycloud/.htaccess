@@ -1,0 +1,5 @@
+﻿RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(-1|\d+|[bi][a-zA-Z0-9]+)(\.\w+|/([^/]+))?$ /api.php?id=$1&name=$3 [QSA,L]
